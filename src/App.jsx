@@ -3,12 +3,15 @@ import Header from './components/Header'
 
 function App() {
 
-  //Componentes que pasan por más de un componente
-  cosnt [presupuesto, setPresupuesto] = useState(0);
+  // Componentes que pasan por más de un componente
+  const [presupuesto, setPresupuesto] = useState(0);
 
   return (
     <div>
-      <Header />
+      <Header 
+        presupuesto={presupuesto}
+        setPresupuesto={setPresupuesto}
+      />
     </div>
   )
 }
