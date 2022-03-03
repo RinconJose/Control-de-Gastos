@@ -46,6 +46,7 @@ function App() {
       gasto.id = generarId();
       gasto.fecha = Date.now();
       setGastos([...gastos, gasto])
+      setGastoEditar({})
     }
     setAnimarModal(false)
     setTimeout(() => {
@@ -92,6 +93,7 @@ function App() {
           setAnimarModal={setAnimarModal}
           guardarGasto={guardarGasto}
           gastoEditar={gastoEditar}
+          setGastoEditar={setGastoEditar}
         />
       }
     </div>
